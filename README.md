@@ -30,6 +30,7 @@ license: (ISC)
     message.js
     word.js
  --node_modules
+ --bundler.js
  --package.json
  --README.md
 ```
@@ -48,6 +49,9 @@ index.js代码
 import message from './message.js';
 console.log(message);
 ```
-通过观察上面简单的三个文件的代码，我们会发现，这几段代码的主要功能模块的导入和导出解析,这也是打包工具的主要功能，那这些代码是如何转换为浏览器可识别代码的,接下来，我们来通过代码演示实现这个过程
+通过观察上面简单的三个文件的代码，我们会发现，这几段代码的主要功能模块的导入和导出解析,这也是打包工具的主要功能，那这些代码是如何转换为浏览器可识别代码的,接下来，我们来通过代码演示实现这个过程；
+## 模块解析
+首先，我们在bundler文件下创建bundler.js文件，作为我们打包过程的执行文件，然后我们去执行node bundler.js来执行打包的过程；我们先创建一个名为moduleAnalyser的函数来解析模块，该函数接收一个filename地址字符串，获取到对应地址的文件，并通过
+**@babel/parser**模块的parser方法将对应的文件字符串转化为抽象节点树，不清楚抽象节点树的小伙伴可以通过把下面代码中的ast在控制台中打印出来，观察其结构；
 
 
