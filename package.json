@@ -16,6 +16,12 @@
     "url": "https://github.com/wzd-front-end/bundler/issues"
   },
   "homepage": "https://github.com/wzd-front-end/bundler#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/parser": "^7.5.0",
+    "@babel/traverse": "^7.5.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
   "dependencies": {}
 }
