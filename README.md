@@ -48,5 +48,6 @@ index.js代码
 import message from './message.js';
 console.log(message);
 ```
+通过观察上面简单的三个文件的代码，我们会发现，这几段代码的主要功能是导入和导出解析文件，通过import
 
 
