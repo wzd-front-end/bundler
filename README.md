@@ -1,13 +1,2 @@
-### 代码块
-``` python
-@requires_authorization
-def somefunc(param1='', param2=0):
-    '''A docstring'''
-    if param1 > param2: # interesting
-        print 'Greater'
-    return (param2 - param1 + 1) or None
-class SomeClass:
-    pass
->>> message = '''interpreter
-... prompt'''
-```
+# 模仿webpack实现简单的打包工具
+@(示例笔记本)[马克飞象|帮助|Markdown]
