@@ -24,14 +24,14 @@ license: (ISC)
 
 接下来，在创建测试用例之前，我们先来构建我们的项目，下面是我们的目录结构,src文件夹下面的文件为我们的测试例子：
 ``` python
--bundler
-    -src
-        index.js
-        message.js
-        word.js
-    -node_modules
-    -package.json
-    -README.md
+--bundler
+ --src
+    index.js
+    message.js
+    word.js
+ --node_modules
+ --package.json
+ --README.md
 ```
 word.js代码
 ``` python
