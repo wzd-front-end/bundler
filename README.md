@@ -153,7 +153,7 @@ const generateCode = (entry) => {
 const code = generateCode('./src/index.js')
 console.log(code)
 ```
-最后我们在控制台输出的代码，复制到浏览器的控制抬中执行，按照预定的结果运行输出了我们的字串值
+最后我们在控制台输出的代码，复制到浏览器的控制抬中执行，按照预定的结果运行打印出结果，运行代码如下：
 ``` python
 (function(graph){
   function require(module) {
